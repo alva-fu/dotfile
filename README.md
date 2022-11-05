@@ -8,7 +8,7 @@
 
     ```shell
     cd
-    git clone git@github.com:citrus030/.dotfiles.git
+    git clone git@github.com:alva-fu/dotfile.git
     cd .dotfiles
     ```
 
