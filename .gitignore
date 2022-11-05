@@ -1,0 +1,6 @@
+/vim/autoload/
+/vim/backup/
+/vim/colors/
+/vim/plugged/
+/zsh/custom/
+/.vscode/
