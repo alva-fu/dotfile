@@ -6,15 +6,15 @@
 
 1. Clone this repo to `$HOME`:
 
-    ```shell
+    ```sh
     cd
     git clone git@github.com:alva-fu/dotfile.git
-    cd .dotfiles
+    cd dotfiles
     ```
 
 2. Install the [`invoke`](https://www.pyinvoke.org/) module with `pip`:
 
-    ```shell
+    ```sh
     pip install invoke
     ```
 
@@ -30,7 +30,7 @@
 
    - Zsh
 
-       ```shell
+       ```sh
        sudo apt update
        sudo apt install zsh
        sudo usermod -s $(which zsh) $(whoami)
@@ -40,7 +40,7 @@
 
    - `curl` or `wget`
 
-       ```shell
+       ```sh
        sudo apt update && sudo apt install curl
        sudo apt update && sudo apt install wget
        ```
@@ -51,29 +51,24 @@
 
     - Install [**Oh My Zsh**](https://github.com/ohmyzsh/ohmyzsh):
 
-        ```shell
+        ```sh
         cd $HOME/.dotfiles/
         invoke BuildZsh
         ```
 
     - Plugins (include [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions), [`zsh-completions`](https://github.com/zsh-users/zsh-completions) and [`zsh-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting)) and theme could also be installed at the same time:
 
-        ```shell
+        ```sh
         invoke BuildZsh -p -t
         ```
 
-3. Install **fonts**:
+3. Install the **fonts**:
 
-    ```shell
-    invoke -c # install the CascadiaCode
-    invoke -f # install the FiraCode
-    invoke -m #install the Meslo
-    invoke -c -f -m # install all the fonts listed above
-    ```
+    - Download and install the [Nerd Fonts](https://www.nerdfonts.com/).
 
-4. Replace the original `$HOME/.zshrc` and `$HOME/.zprofile`  with `$HOME/.dotfiles/zsh/.zshrc` and `$HOME/.dotfiles/zsh/.zprofile`.
+4. Replace the original `$HOME/.zshrc` and `$HOME/.zprofile`  with `$HOME/dotfiles/zsh/.zshrc` and `$HOME/dotfiles/zsh/.zprofile`.
 
-    ```shell
+    ```sh
     invoke MakeSoftlink -p -z
     ```
 
@@ -87,13 +82,13 @@
 
    - Vim:
 
-        ```shell
+        ```sh
         sudo apt install vim
         ```
 
    - `vim-plug`:
 
-        ```shell
+        ```sh
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
             https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         ```
