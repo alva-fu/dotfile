@@ -1,0 +1,9 @@
+# Prompt before any removal
+alias rm='rm -i'
+
+# ls
+alias ls='ls -l --color=auto'
+alias la='ls -a'
+
+# grep
+alias grep='grep --color=auto'
