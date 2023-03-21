@@ -61,7 +61,7 @@
 
 ### Tmux Setup
 
-_Note_: Requires [tmux](https://github.com/tmux/tmux) >= 3.2a
+_Note_: Requires [tmux](https://github.com/tmux/tmux) **>= 3.2a**
 
 1. Install `tmux`
 
@@ -78,7 +78,7 @@ _Note_: Requires [tmux](https://github.com/tmux/tmux) >= 3.2a
 
 ### Neovim Setup
 
-_Note_: Requires [Neovim](https://neovim.io/) >= 0.8
+_Note_: Requires [Neovim](https://neovim.io/) **>= 0.8**
 
 1. Install `neovim`
 
@@ -90,21 +90,21 @@ _Note_: Requires [Neovim](https://neovim.io/) >= 0.8
 
     - Ubuntu
 
-        Since the `noevim` of Ubuntu (22.04 LTS) package is < 0.8, it should be installed from source. The details of installation could be found at [Neovim's home page](https://neovim.io/).
+        - Since the `noevim` of Ubuntu (22.04 LTS) package is < 0.8, it should be installed from source. The details of installation could be found at [Neovim's home page](https://neovim.io/). Also, it cloud be installed via `brew` if [**Homebrew for Linux**](https://docs.brew.sh/Homebrew-on-Linux) is installed.
 
-        1. Download [nvim-linux64.tar.gz](https://github.com/neovim/neovim/releases/tag/stable)
+          1. Download [nvim-linux64.tar.gz](https://github.com/neovim/neovim/releases/tag/stable)
 
-        2. Extract the tarball
+          2. Extract the tarball
 
-            ```sh
-            tar xzvf nvim-linux64.tar.gz
-            ```
+              ```sh
+              tar xzvf nvim-linux64.tar.gz
+              ```
 
-        3. Install `neovim`
+          3. Install `neovim`
 
-            ```sh
-            ./nvim-linux64/bin/nvim
-            ```
+              ```sh
+              ./nvim-linux64/bin/nvim
+              ```
 
 2. Symlinks the config files into `~/.config/nvim`
 
