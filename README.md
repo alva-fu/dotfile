@@ -111,3 +111,16 @@ _Note_: Requires [Neovim](https://neovim.io/) >= 0.8
     ```sh
     ln -s $HOME/.dotfile/config/nvim $HOME/.config/nvim
     ```
+
+3. Install the neovim plugin manager [`packer`](https://github.com/wbthomason/packer.nvim)
+
+    ```sh
+    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+     ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    ```
+
+4. Start up `neovim` and run the commands below:
+
+    - Remove any disabled or unused plugins by `:PackerClean`
+
+    - Clean, then install missing plugins by `:PackerInstall`
