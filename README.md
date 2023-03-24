@@ -38,14 +38,18 @@
     - [tide](https://github.com/IlanCosman/tide), [z](https://github.com/jethrokuan/z), and [nvm](https://github.com/jorgebucaran/nvm.fish)
 
         ```sh
-        fisher install ilancosman/tide@v5
         fisher install jethrokuan/z
         fisher install jorgebucaran/nvm.fish
+        fisher install ilancosman/tide@v5
         ```
 
 4. Configure shell theme via `tide configure` command
 
-5. Restart the terminal
+5. Change the login shell and then restart the terminal 
+
+    ```sh
+    sudo usermod -s $(which fish) $(whoami)
+    ```
 
 6. Symlinks the config files into `~/.config/fish`
 
