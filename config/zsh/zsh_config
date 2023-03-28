@@ -1,0 +1,21 @@
+# Prompt before any removal
+alias rm='rm -i'
+
+# ls
+alias ls='ls -l --color=auto'
+alias la='ls -a'
+
+# grep
+alias grep='grep --color=auto'
+
+# Check if nvim is installed for making alias
+if [ -x "/home/linuxbrew/.linuxbrew/bin/nvim" ] ; then
+  alias vim='nvim'
+  export EDITOR='nvim'
+fi
+
+# Check if nvim is installed for making alias
+if [ -x "/home/linuxbrew/.linuxbrew/bin/exa" ] ; then
+  alias ll='exa -l -g --icons'
+  alias lla='ll -a'
+fi
