@@ -9,13 +9,13 @@ alias la='ls -a'
 alias grep='grep --color=auto'
 
 # Check if nvim is installed for making alias
-if [ -x "/home/linuxbrew/.linuxbrew/bin/nvim" ] ; then
+if [ -x "/home/linuxbrew/.linuxbrew/bin/nvim" ] || [ -x "/usr/local/bin/nvim" ] ; then
   alias vim='nvim'
   export EDITOR='nvim'
 fi
 
 # Check if nvim is installed for making alias
-if [ -x "/home/linuxbrew/.linuxbrew/bin/exa" ] ; then
+if [ -x "/home/linuxbrew/.linuxbrew/bin/exa" ] || [ -x "/usr/local/bin/exa" ] ; then
   alias ll='exa -l -g --icons'
   alias lla='ll -a'
 fi
